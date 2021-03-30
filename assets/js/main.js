@@ -1,9 +1,3 @@
-/**
-* Template Name: Gp - v2.1.0
-* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 !(function($) {
   "use strict";
 
@@ -169,15 +163,15 @@
 
   // Porfolio isotope and filter
   $(window).on('load', function() {
-    var portfolioIsotope = $('.portfolio-container').isotope({
-      itemSelector: '.portfolio-item'
+    var healthIsotope = $('.health-container').isotope({
+      itemSelector: '.health-item'
     });
 
-    $('#portfolio-flters li').on('click', function() {
-      $("#portfolio-flters li").removeClass('filter-active');
+    $('#health-flters li').on('click', function() {
+      $("#health-flters li").removeClass('filter-active');
       $(this).addClass('filter-active');
 
-      portfolioIsotope.isotope({
+      healthIsotope.isotope({
         filter: $(this).data('filter')
       });
       aos_init();
@@ -204,9 +198,15 @@
     loop: true,
     items: 1
   });
-
-  // Portfolio details carousel
-  $(".portfolio-details-carousel").owlCarousel({
+  var logID = 'log',
+  log = $('<div id="'+logID+'"></div>');
+$('body').append(log);
+  $('[type*="radio"]').change(function () {
+    var me = $(this);
+    log.html(me.attr('value'));
+  });
+  // health details carousel
+  $(".health-details-carousel").owlCarousel({
     autoplay: true,
     dots: true,
     loop: true,
