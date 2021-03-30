@@ -1,3 +1,4 @@
+
 <?php
   $toEmail = 'collegetote@example.com';
   $mailHeaders = "Rating: " . $_POST['rating'] ."<". $_POST['messege'] .">\r\n";
