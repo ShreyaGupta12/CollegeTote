@@ -736,20 +736,20 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# health
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+.health .health-item {
   margin-bottom: 30px;
 }
 
-.portfolio #portfolio-flters {
+.health #health-flters {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
 }
 
-.portfolio #portfolio-flters li {
+.health #health-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 15px 10px 15px;
@@ -763,16 +763,16 @@ section {
   border-radius: 3px;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.health #health-flters li:hover, .health #health-flters li.filter-active {
   color: #151515;
   background: #ffc451;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.health #health-flters li:last-child {
   margin-right: 0;
 }
 
-.portfolio .portfolio-wrap {
+.health .health-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
@@ -780,7 +780,7 @@ section {
   background: rgba(21, 21, 21, 0.6);
 }
 
-.portfolio .portfolio-wrap::before {
+.health .health-wrap::before {
   content: "";
   background: rgba(21, 21, 21, 0.6);
   position: absolute;
@@ -793,11 +793,11 @@ section {
   opacity: 0;
 }
 
-.portfolio .portfolio-wrap img {
+.health .health-wrap img {
   transition: all ease-in-out 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-info {
+.health .health-wrap .health-info {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -813,13 +813,13 @@ section {
   padding: 20px;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 {
+.health .health-wrap .health-info h4 {
   font-size: 20px;
   color: #fff;
   font-weight: 600;
 }
 
-.portfolio .portfolio-wrap .portfolio-info p {
+.health .health-wrap .health-info p {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
   text-transform: uppercase;
@@ -828,12 +828,12 @@ section {
   font-style: italic;
 }
 
-.portfolio .portfolio-wrap .portfolio-links {
+.health .health-wrap .health-links {
   text-align: center;
   z-index: 4;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a {
+.health .health-wrap .health-links a {
   color: #fff;
   margin: 0 5px 0 0;
   font-size: 28px;
@@ -841,19 +841,19 @@ section {
   transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
+.health .health-wrap .health-links a:hover {
   color: #ffc451;
 }
 
-.portfolio .portfolio-wrap:hover::before {
+.health .health-wrap:hover::before {
   opacity: 1;
 }
 
-.portfolio .portfolio-wrap:hover img {
+.health .health-wrap:hover img {
   transform: scale(1.2);
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info {
+.health .health-wrap:hover .health-info {
   opacity: 1;
 }
 
@@ -1010,6 +1010,7 @@ section {
   font-style: italic;
   margin: 0 auto 15px auto;
   color: #eee;
+  font-size: 2rem;
 }
 
 .testimonials .owl-nav, .testimonials .owl-dots {
@@ -1043,14 +1044,14 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Team
+# aboutme
 --------------------------------------------------------------*/
-.team {
+.aboutme {
   background: #fff;
   padding: 60px 0;
 }
 
-.team .member {
+.aboutme .member {
   margin-bottom: 20px;
   overflow: hidden;
   border-radius: 40px;
@@ -1058,12 +1059,12 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-.team .member .member-img {
+.aboutme .member .member-img {
   position: relative;
   overflow: hidden;
 }
 
-.team .member .social {
+.aboutme .member .social {
   position: absolute;
   left: 0;
   bottom: 30px;
@@ -1073,55 +1074,55 @@ section {
   text-align: center;
 }
 
-.team .member .social a {
+.aboutme .member .social a {
   transition: color 0.3s;
   color: #151515;
   margin: 0 3px;
   padding-top: 7px;
   border-radius: 4px;
-  width: 36px;
-  height: 36px;
+  width: 100px;
+  height: 100px;
   background: rgba(255, 255, 255, 0.8);
   display: inline-block;
   transition: ease-in-out 0.3s;
   color: #ffc451;
 }
 
-.team .member .social a:hover {
+.aboutme .member .social a:hover {
   color: #fff;
   background: #ffc451;
 }
 
-.team .member .social i {
+.aboutme .member .social i {
   font-size: 18px;
 }
 
-.team .member .member-info {
+.aboutme .member .member-info {
   padding: 25px 15px;
 }
 
-.team .member .member-info h4 {
+.aboutme .member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
   color: #151515;
 }
 
-.team .member .member-info span {
+.aboutme .member .member-info span {
   display: block;
   font-size: 13px;
   font-weight: 400;
   color: #aaaaaa;
 }
 
-.team .member .member-info p {
+.aboutme .member .member-info p {
   font-style: italic;
   font-size: 14px;
   line-height: 26px;
   color: #777777;
 }
 
-.team .member:hover .social {
+.aboutme .member:hover .social {
   opacity: 1;
   bottom: 15px;
 }
@@ -1253,8 +1254,21 @@ section {
   transition: 0.4s;
   border-radius: 4px;
 }
-
+.feedback .php-email-form button[type="submit"] {
+  background: #ffc451;
+  border: 0;
+  padding: 10px 24px;
+  color: #151515;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+.connect{
+  transition:10s;
+}
 .contact .php-email-form button[type="submit"]:hover {
+  background: #ffcd6b;
+}
+.feedback .php-email-form button[type="submit"]:hover {
   background: #ffcd6b;
 }
 
@@ -1326,27 +1340,27 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# health Details
 --------------------------------------------------------------*/
-.portfolio-details {
+.health-details {
   padding-top: 40px;
 }
 
-.portfolio-details .portfolio-details-container {
+.health-details .health-details-container {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-carousel {
+.health-details .health-details-carousel {
   position: relative;
   z-index: 1;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+.health-details .health-details-carousel .owl-nav, .health-details .health-details-carousel .owl-dots {
   margin-top: 5px;
   text-align: left;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-dot {
+.health-details .health-details-carousel .owl-dot {
   display: inline-block;
   margin: 0 10px 0 0;
   width: 12px;
@@ -1355,11 +1369,11 @@ section {
   background-color: #ddd !important;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-dot.active {
+.health-details .health-details-carousel .owl-dot.active {
   background-color: #ffc451 !important;
 }
 
-.portfolio-details .portfolio-info {
+.health-details .health-info {
   padding: 30px;
   position: absolute;
   right: 0;
@@ -1369,7 +1383,7 @@ section {
   z-index: 2;
 }
 
-.portfolio-details .portfolio-info h3 {
+.health-details .health-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1377,36 +1391,36 @@ section {
   border-bottom: 1px solid #eee;
 }
 
-.portfolio-details .portfolio-info ul {
+.health-details .health-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.health-details .health-info ul li + li {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
+.health-details .health-description {
   padding-top: 50px;
 }
 
-.portfolio-details .portfolio-description h2 {
+.health-details .health-description h2 {
   width: 50%;
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.health-details .health-description p {
   padding: 0 0 0 0;
 }
 
 @media (max-width: 992px) {
-  .portfolio-details .portfolio-description h2 {
+  .health-details .health-description h2 {
     width: 100%;
   }
-  .portfolio-details .portfolio-info {
+  .health-details .health-info {
     position: static;
     margin-top: 30px;
   }
@@ -1463,8 +1477,8 @@ section {
   margin-right: 4px;
   border-radius: 4px;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 100px;
+  height: 100px;
   transition: 0.3s;
 }
 
@@ -1564,3 +1578,54 @@ section {
   font-size: 13px;
   color: #fff;
 }
+.star-rating { 
+  font-family: 'FontAwesome'; 
+  margin: 50px auto;
+  
+  > fieldset {
+    border: none;
+    display: inline-block;
+    
+    &:not(:checked) {
+      > input {
+        position: absolute;
+        top: -9999px;
+        clip: rect(0,0,0,0);
+      }
+
+      > label {
+        float: right;
+        width: 1em;
+        padding: 0 .05em;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 200%;
+        color: @starColour;
+        
+        &:before {
+          content: '\f006  ';
+        }
+        
+        &:hover,
+        &:hover ~ label {
+          color: @starHoverColour;
+          text-shadow: 0 0 3px @starHoverColour;
+          &:before {
+            content: '\f005  ';
+          }
+        }
+      }
+    }
+    
+    > input:checked {
+      & ~ label {
+        &:before {
+          content: '\f005  ';
+        }
+      }    
+    }    
+
+    > label:active {
+      position: relative;
+      top: 2px;}
