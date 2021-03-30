@@ -1,5 +1,5 @@
 <?php
-  $receiving_email_address = 'collegetote@example.com';
+  $toEmail = 'collegetote@example.com';
   $mailHeaders = "From: " . $_POST['name'] ."<". $_POST['email'] .">\r\n";
 $details="Name : ".$_POST["firstname"]."\n"."Email : ".$_POST["email"]."\n"."Subject : + ".$_POST['subject']."\n"."Messege : ".$_POST['message']."\n";
 if(mail($toEmail, $mailHeaders, $details)) {
