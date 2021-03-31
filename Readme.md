@@ -10,3 +10,5 @@ By the Students, For the Students 🤩
 >Enjoy Life to the fullest but don't forget to learn 😎
  
  You can access the web app through this link: https://shreyagupta12.github.io/CollegeTote/index.html
+
+Do fill the feedback form: https://forms.gle/L3pLTrSUZ3B78VPb9
