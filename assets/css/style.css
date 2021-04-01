@@ -1597,6 +1597,10 @@ section {
     top:  8%;
     right: 17%;
 }
+.checklist{
+  position:relative;
+  margin: 2% 20%;
+}
 .cont {
 border: 1px solid #c4c4c4;
 border-radius: 30px;
@@ -1607,4 +1611,18 @@ margin: 2px 0px;
 flex: auto;
 box-shadow: 5px 10px 20px #afafaf;
 margin-bottom: 0px;
+}
+.checkcont{
+  border: 1px solid #c4c4c4;
+border-radius: 30px;
+background-color: #ffcd6b;
+padding: 20px 20px 20px 20px;
+width: 650px;
+margin: 2px 0px;
+flex: auto;
+box-shadow: 5px 10px 20px #afafaf;
+margin-bottom: 0px;
+font-size: 20px;
+font-weight: 800;
+color:#530453;
 }
